@@ -1,5 +1,7 @@
 <h1>Edit movie</h1>
 
+<%= render partial: "movies/form", locals: { movie: @movie } %>
+
 <% @movie.errors.full_messages.each do |message| %>
   <p style="color: red;"><%= message %></p>
 <% end %>
